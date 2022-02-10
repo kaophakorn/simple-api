@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"simple-go-api/internal/provider"
 	"simple-go-api/internal/restapi/handler"
+	"simple-go-api/internal/restapi/middleware"
 
 	nice "github.com/ekyoung/gin-nice-recovery"
 	"github.com/gin-gonic/gin"
@@ -19,6 +20,7 @@ func Serve() {
 		})
 	}))
 	router := g.Group("/")
+	router.Use(middleware.DependencyInjection())
 	router.GET("players", handler.GetPlayers)
 	router.GET("leagues", handler.GetLeagues)
 	router.GET("teams", handler.GetTeam)
