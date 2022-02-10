@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "3621751c-89d5-4f75-a68f-ec386c27ab8e",
+		"name": "simple-go-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "players",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/players",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "localhost:5000",
+			"type": "string"
+		}
+	]
+}
