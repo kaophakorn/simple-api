@@ -6,6 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+const ResponseKey string = "responseBody"
+
 // DefaultMiddleWare : active every incoming request
 func DependencyInjection() gin.HandlerFunc {
 	return func(ginContext *gin.Context) {

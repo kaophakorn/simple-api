@@ -20,7 +20,7 @@ func Serve() {
 	}))
 	router := g.Group("/")
 	router.GET("players", handler.GetPlayers)
-	cfg := provider.GetConfig()
-
-	g.Run(fmt.Sprintf(":%s", cfg.Port))
+	router.GET("leagues", handler.GetLeagues)
+	router.GET("teams", handler.GetTeam)
+	g.Run(fmt.Sprintf(":%s", provider.GetConfig().Port))
 }

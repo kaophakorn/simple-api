@@ -21,6 +21,40 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "teams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/teams",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"teams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leagues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/leagues",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"leagues"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
