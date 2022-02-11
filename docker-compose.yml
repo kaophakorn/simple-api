@@ -34,4 +34,3 @@ services:
       TIMEZONE: "Asia/Bangkok"
     volumes:
       - ./init/database/mysql/:/docker-entrypoint-initdb.d/
-      
